@@ -208,8 +208,8 @@ def backflag(x, y, z, prop, grid, reals, output='images/backflag.png'):
     sns_plot = sns.heatmap(final_cm, annot=True, vmin=0.0, vmax=1.0, fmt='.2f')
     plt.yticks(np.arange(len(codes))+0.5, labels=codes)
     plt.xticks(np.arange(len(codes))+0.5, labels=codes)
-    plt.xlabel('Predicted', fontsize=10)
-    plt.ylabel('Actual', fontsize=10)
+    plt.xlabel('Predicted', fontsize=14)
+    plt.ylabel('Actual', fontsize=14)
     figure = sns_plot.get_figure()
     figure.savefig(output, dpi=300)
     
